@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+ol, ul {
+	list-style: none;
+}
+h1 { font: bold 40px/40px Helvetica, Arial, Sans-serif; text-align: center; color: #eee; text-shadow: 0px 2px 6px #333; }
+h2 { font: bold 30px/30px Helvetica, Arial, Sans-serif; color: #BFBF00; text-shadow: 0px 2px 6px #999; margin-left:20px;}
+body {
+}
+body a {
+	text-decoration:none;
+}
+#vnav{
+    position: relative;
+}
+#vnav #horizontal li {
+    float:left;
+	height:100%;
+	width:33%;
+    cursor:pointer;
+    overflow:hidden;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+    text-shadow: 0 -1px 1px #222;
+    border-bottom: 1px solid #222;
+}
+
+
+
+#vnav #single li {
+	height:42px;
+	width:650px;
+	cursor:pointer;
+	overflow:hidden;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+    text-shadow: 0 -1px 1px #222;
+    border-bottom: 1px solid #222;
+}
+
+
+/* second example */
+
+
+
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+    transition: all 0.4s ease-in-out; !important;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    align-content: space-around;
+
+}
+
+.box {
+    flex: 1;
+    color: #fff;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.box:hover {
+    flex-grow: 10
+}
+
+.box h2{
+    color: #fff;
+    margin: auto;
+    font: 700 2vw/45px raleway;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: -1px 1px 1px rgba(0,0,0,0.5)
+}
+.box p{
+    font: 100 14px/29px raleway;
+    color: #ecf0f1;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    text-shadow: -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.box:first-of-type {
+    background: linear-gradient(to top, rgba(41, 128, 185, 1), rgba(41, 128, 185, 0.7)),
+    url('http://s9.postimg.org/5r18saj1b/image.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.box:nth-of-type(2) {
+    background: linear-gradient(to top, rgba(127, 140, 141, 1.0), rgba(127, 140, 141, 0.7)),
+    url('http://s9.postimg.org/7k45gm47z/image.jpg') no-repeat center;
+    background-size: cover;
+}
+
+
+
+.box:last-of-type {
+    background: linear-gradient(to top, rgba(39, 174, 96, 1.0), rgba(39, 174, 96, 0.7)),
+    url('http://s9.postimg.org/ffeovfdun/image.jpg') no-repeat center;
+    background-size: cover
+}
+
+@media screen and (max-width:600px) {
+
+    h2 {font-size: 30px !important}
+
+    p {display: none}
+
+    .container {display: block;}
+
+    .box {
+        display: flex;
+        width: 100%;
+        height: 25vh;
+    }
+}
+
